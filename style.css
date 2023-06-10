@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.svg 
+{ 
+    width: 10%;
+}
+
+body
+{
+    background-color: black;
+    color: #fff;
+}
+
+.svg svg
+{
+    fill: gray;
+    transition: 0.3s;
+    margin: 5%;
+    
+}
+
+.svg svg:hover
+{
+    fill: white;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    height: 8vh;
+    margin-top: 1%;
+}
+
+header>h1>a
+{
+    color: #fff;
+}
+
+header>ul
+{
+    display: flex;
+    list-style: none;
+    width: 45%;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-weight: 900;
+    align-items: center;
+}
+
+header a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.sitemenu>li>a:hover
+{
+    color: #20c997;
+    transition: 0.2s;
+}
+
+.drop svg
+{
+    fill: #777777;
+    margin-left: 1px;
+}
+
+.drop
+{
+    position: relative;
+}
+
+.dropmenu 
+{
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: 200%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -99;
+}
+
+.drop:hover .dropmenu
+{
+    opacity: 100%;
+    z-index: 99;
+}
+
+.dropmenu>li
+{
+    color: black;
+    height: 4vh;
+    padding-top: 1vh;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.subdrop
+{
+    position: relative;
+}
+
+.subdropmenu 
+{
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: 200%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -99;
+}
+
+.subdrop:hover .subdropmenu
+{
+    opacity: 100%;
+    z-index: 99;
+}
+
+.subdropmenu>li
+{
+    color: black;
+    height: 4vh;
+    padding-top: 1vh;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.conteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 1%;
+}
+
+.conteiner div
+{
+    position: relative;
+    flex: 0 0 calc(31% - 10px);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.conteiner span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.conteiner img
+{
+    filter: saturate(0);
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+}
+
+.conteiner img:hover
+{
+    filter: saturate(1);
+    filter: brightness(100%);
+    transform: scale(1.02);
+    filter: brightness(80%);
+}
+
+.conteiner p
+{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.conteiner a
+{
+    border: 2px solid;
+    padding: 10px;
+    border-color: #fff;
+    border-width: 2px;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner a:hover
+{
+    background-color: #fff;
+    color: black;
+}
+
+.myservices 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myservices h2
+{
+    text-align: center;
+    font-size: 62px;
+    letter-spacing: 2px;
+    margin: 90px 0 60px 0;
+}
+
+.servicesconteiner svg
+{
+    fill: #20c997;
+    margin: 0 0 24px;
+    width: 20%;
+    height: 20%;
+    transition: 0.3s;
+}
+
+.servicesconteiner span
+{
+    overflow: hidden;
+}
+
+.servicesconteiner svg:hover
+{
+    scale: 120%;
+}
+
+.servicesconteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+
+.servicesconteiner>div
+{
+    flex: 0 0 calc(31% - 10px);
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #262626;
+    text-align: center;
+    height: 60vh;
+    padding: 48px;
+}
+
+.servicesconteiner p:nth-of-type(1)
+{
+    color: #777;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.servicesconteiner p:nth-of-type(2)
+{
+    color: #20c997;
+    font-weight: 900;
+}
+
+.servicesconteiner h3
+{
+    font-size: 25px;
+}
+
+.conteinerabout 
+{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 0 0 15px;
+}
+
+.conteinerabout img
+{
+    filter: saturate(0);
+    transition: 0.3s;
+    height: 735px;
+    width: 756px;
+    padding: 0 15px;
+    
+}
+
+.conteinerabout img:hover
+{
+    filter: saturate(1);
+    filter: brightness(100%);
+    transform: scale(1.02);
+    filter: brightness(80%);
+}
+
+.conteinerabout div:nth-of-type(2)
+{
+    width: 30%;
+    margin: 0px 0px 0px 112px;
+    padding: 0 15px;
+}
+
+.conteinerabout h3
+{
+    margin: 0 0 8px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.conteinerabout p
+{
+    color: #777777;
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.personsconteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 0 15px;
+    padding: 80px 0;
+}
+
+.personsconteiner div
+{
+    width: 30%;
+    height: 472px;
+    margin: 0 0 48px;
+    padding: 0 15px;
+}
+
+.personsconteiner img
+{
+    border-radius: 100%;
+    filter: saturate(0);
+    transition: 0.3s;
+    width: 60%;
+    margin: 0 0 24px;
+}
+
+.personsconteiner img:hover
+{
+    filter: saturate(1);
+    filter: brightness(100%);
+    transform: scale(1.01);
+    filter: brightness(80%);
+}
+
+.personsconteiner p
+{
+    text-align: center;
+    margin: 35px 0 24px;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.personsconteiner svg
+{
+    fill: #20c997;
+    width: 15%;
+    margin: 0 0 16px;
+}
+
+.personsconteiner svg:hover
+{
+    fill: #20c997;
+    filter: brightness(70%);
+}
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    color: #777;
+    font-weight: 600;
+    padding: 24px 0;
+}
+
+.footer p
+{
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+.footer svg
+{
+    fill: #777;
+}
+
+.footer a
+{
+    color: #20c997;
+    text-decoration: none;
+}
+
+.footer a:hover
+{
+    color: #20c997;
+    filter: brightness(70%);
+}
+
+
+
